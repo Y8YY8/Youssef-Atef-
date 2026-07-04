@@ -2,36 +2,36 @@ const products = [
     {
         brand: "نسلة (Nestlé)",
         items: [
-            { name: "نسلة 600 مللى (كرتونة)", code: "6223001930556", img: "https://images.kg.asda.com/retail/724/511/5011013724511.jpg" },
-            { name: "نسلة لتر ونصف (كرتونة)", code: "6223001930518", img: "https://m.media-amazon.com/images/I/51uG98Y2S7L._AC_SL1000_.jpg" }
+            { name: "نسلة 600 مللى (كرتونة)", code: "6223001930556" },
+            { name: "نسلة لتر ونصف (كرتونة)", code: "6223001930518" }
         ]
     },
     {
         brand: "بيوفانا (Pifana)",
         items: [
-            { name: "بيوفانا 600 مللى (كرتونة)", code: "6224009169511", img: "https://m.media-amazon.com/images/I/41-lMscy0hL._AC_.jpg" },
-            { name: "بيوفانا لتر ونصف (كرتونة)", code: "6224009619528", img: "https://m.media-amazon.com/images/I/41-lMscy0hL._AC_.jpg" },
-            { name: "بيوفانا 330 مللى (قطعة واحدة)", code: "066157", img: "https://m.media-amazon.com/images/I/41-lMscy0hL._AC_.jpg" }
+            { name: "بيوفانا 600 مللى (كرتونة)", code: "6224009169511" },
+            { name: "بيوفانا لتر ونصف (كرتونة)", code: "6224009619528" },
+            { name: "بيوفانا 330 مللى (قطعة واحدة)", code: "066157" }
         ]
     },
     {
         brand: "دسانى (Dasani)",
         items: [
-            { name: "دسانى 600 مللى (كرتونة)", code: "6224000557171", img: "https://m.media-amazon.com/images/I/51w7Y6R-vRL._AC_SL1000_.jpg" },
-            { name: "دسانى لتر ونصف (كرتونة)", code: "6224000557188", img: "https://m.media-amazon.com/images/I/41-lMscy0hL._AC_.jpg" }
+            { name: "دسانى 600 مللى (كرتونة)", code: "6224000557171" },
+            { name: "دسانى لتر ونصف (كرتونة)", code: "6224000557188" }
         ]
     },
     {
         brand: "ايلانو (Elano)",
         items: [
-            { name: "ايلانو 600 مللى (كرتونة)", code: "6225000378896", img: "https://m.media-amazon.com/images/I/41-lMscy0hL._AC_.jpg" },
-            { name: "ايلانو لتر ونصف (كرتونة)", code: "6225000378865", img: "https://m.media-amazon.com/images/I/41-lMscy0hL._AC_.jpg" }
+            { name: "ايلانو 600 مللى (كرتونة)", code: "6225000378896" },
+            { name: "ايلانو لتر ونصف (كرتونة)", code: "6225000378865" }
         ]
     },
     {
         brand: "اكوافينا (Aquafina)",
         items: [
-            { name: "اكوافينا 330 مللى (قطعة واحدة)", code: "6223001365372", img: "https://m.media-amazon.com/images/I/51Z2U4G+xAL._AC_SL1000_.jpg" }
+            { name: "اكوافينا 330 مللى (قطعة واحدة)", code: "6223001365372" }
         ]
     }
 ];
@@ -56,9 +56,7 @@ function renderApp() {
             card.className = 'product-card';
             
             card.innerHTML = `
-                <div class="product-image">
-                    <img src="${product.img}" alt="${product.name}" onerror="this.src='https://via.placeholder.com/80?text=H2O'">
-                </div>
+                <div class="product-image"></div>
                 <div class="product-info">
                     <div class="product-title">${product.name}</div>
                     <div class="product-code">${product.code}</div>

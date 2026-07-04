@@ -56,8 +56,7 @@ function renderApp() {
             card.className = 'product-card';
             
             card.innerHTML = `
-                <div class="product-image">
-                    <img src="${product.img}" alt="${product.name}" onerror="this.src='https://via.placeholder.com/80?text=H2O'">
+                <div class="product-image" style="background-color: black;">
                 </div>
                 <div class="product-info">
                     <div class="product-title">${product.name}</div>
